@@ -1,19 +1,19 @@
-# UTS Pemrograman Mobile - UTSdika
+# UTS Pemrograman Mobile - DIKΛ
 
 **Nama:** Riandika Fildani  
 **NIM:** 152023062  
-**Kelas:** IF - Ganjil 2025/2026  
+**Kelas:** AA  
 **Mata Kuliah:** Pemrograman Mobile
 
 ---
 
 ## 📱 Deskripsi Aplikasi
 
-**UTSdika** adalah aplikasi Android yang dikembangkan menggunakan **Kotlin** dan **Jetpack Compose** sebagai bagian dari Ujian Tengah Semester mata kuliah Pemrograman Mobile. Aplikasi ini menampilkan berbagai fitur interaktif dengan antarmuka yang modern dan responsif.
+**DIKΛ** adalah aplikasi Android yang dikembangkan menggunakan **Kotlin** dan **Jetpack Compose** sebagai bagian dari Ujian Tengah Semester mata kuliah Pemrograman Mobile. Aplikasi ini menampilkan berbagai fitur interaktif dengan antarmuka yang modern dan responsif.
 
 ### Fitur Utama:
 1. **Splash Screen** - Tampilan awal dengan animasi menarik (durasi 5 detik)
-2. **Berita** - Menampilkan list berita komunitas dengan fitur pencarian dan detail
+2. **Berita** - Menampilkan list berita dengan fitur pencarian dan detail
 3. **Cuaca** - Informasi cuaca terkini dengan prakiraan mingguan
 4. **Kalkulator** - Kalkulator fungsional untuk operasi matematika dasar
 5. **Kontak** - Daftar kontak dengan fitur pencarian dan detail lengkap
@@ -21,13 +21,13 @@
 
 ---
 
-## 🎯 Ketentuan Pengerjaan
+## 🎯 YANG DI KERJAKAN
 
 ### 1. Splash Screen
 ✅ Splash screen dengan durasi **5 detik**  
 ✅ Menampilkan **nama aplikasi** dengan animasi typing effect  
-✅ Menampilkan **foto profil** dengan animasi scale dan bounce  
-✅ Desain modern dengan gradient background dan elemen dekoratif floating  
+✅ Menampilkan **foto profil** dengan animasi scale dan bounce                                                                           
+✅ Menampilkan **Nama** dan **NRP**                                                                                              
 ✅ Otomatis berpindah ke Dashboard Activity setelah timeout
 
 ### 2. Dashboard Activity
@@ -45,12 +45,11 @@
 - Gambar/thumbnail berita
 - Judul berita
 - Preview isi berita
-- Jumlah members
 - Kategori/tags
 - Tanggal publikasi  
 ✅ **Fitur pencarian** berita dengan SearchBar  
 ✅ **Detail berita** dengan tampilan full content saat item diklik  
-✅ Minimal **5 data berita** dengan konten lengkap
+✅ **5 data berita** dengan konten lengkap
 
 #### Fragment Cuaca
 ✅ Tampilan informasi cuaca terkini meliputi:
@@ -68,7 +67,10 @@
 - Penjumlahan (+)
 - Pengurangan (-)
 - Perkalian (×)
-- Pembagian (÷)  
+- Pembagian (÷)
+- Kuadrat (x²)
+- Akar Kuadrat (√)
+- Dan Operasi-operasi kalkulator lainnya                                                                          
 ✅ Display untuk input dan hasil  
 ✅ Tombol Clear (C) dan Delete  
 ✅ Tombol angka 0-9 dan decimal point  
@@ -80,29 +82,31 @@
 - Foto profil
 - Nama lengkap
 - Nomor telepon
+- Email
 - Status/tagline  
 ✅ **Fitur pencarian** kontak  
 ✅ **Detail kontak** saat diklik dengan informasi:
+- Foto profil
 - Email
-- WhatsApp
-- Alamat
-- Social media links  
-✅ Minimal **10 data kontak**
+- Nama Lengkap
+- Nomor telepon
+- status
 
 #### Fragment Biodata
 ✅ **Mode View** - Menampilkan biodata dalam card yang rapi:
 - Foto profil
 - Data pribadi (Nama, NIM, Tanggal Lahir, dll)
 - Data kontak (Email, Telepon, WhatsApp)
-- Data akademik (Universitas, Program Studi, Tahun Masuk)  
+- Data akademik (Universitas, Program Studi, Tahun Masuk)                                                                    
 ✅ **Mode Edit** - Form untuk mengubah data:
 - TextField untuk setiap data
+- Kalender untuk ganti tanggal lahir
 - RadioButton untuk Jenis Kelamin
 - Dropdown untuk Golongan Darah
-- Button Save dan Cancel  
+- Button Simpan  
 ✅ **Skill section** dengan progress bar untuk setiap skill  
 ✅ Tombol toggle antara mode View dan Edit  
-✅ Validasi dan state management yang baik
+
 
 ---
 
@@ -113,7 +117,7 @@
   <img src="screenshoot/splashscreen.jpg" width="250" alt="Splash Screen">
 </p>
 
-Tampilan splash screen dengan animasi typing effect untuk nama aplikasi "DIKΛ", foto profil dengan animasi bounce, gradient background dengan elemen dekoratif floating, dan durasi 5 detik sebelum masuk ke Dashboard.
+Splash screen aplikasi DIKA menampilkan animasi typing effect pada nama aplikasi, foto profil dengan efek bounce, serta nama dan NRP pengguna secara elegan di tengah layar. Latar dilengkapi gradient background lembut dengan elemen dekoratif floating yang memberi kesan dinamis dan modern. Setelah animasi berjalan selama 5 detik, tampilan otomatis berpindah ke halaman Dashboard utama.
 
 ---
 
@@ -123,8 +127,9 @@ Tampilan splash screen dengan animasi typing effect untuk nama aplikasi "DIKΛ",
   <img src="screenshoot/detailberita.jpg" width="250" alt="Detail Berita">
 </p>
 
-**Kiri:** List berita dengan thumbnail, judul, preview, tags, dan informasi members.  
-**Kanan:** Detail berita dengan konten lengkap saat item diklik.
+Fragment Berita berfungsi menampilkan informasi atau artikel terkini secara terstruktur dan interaktif.
+Pada gambar kiri, ditampilkan daftar berita (list view) yang memuat thumbnail gambar, judul berita, tanggal publikasi, preview isi berita, serta kategori dalam bentuk tag seperti Benefits, Health, dan Sports. Tersedia juga kolom pencarian di bagian atas untuk memudahkan pengguna menemukan berita sesuai kata kunci.
+Sedangkan gambar kanan memperlihatkan halaman detail berita, yang menampilkan gambar utama, judul lengkap, tanggal, kategori, dan isi berita secara penuh. Tampilan ini memberikan pengalaman membaca yang nyaman dan informatif setelah pengguna memilih salah satu berita dari daftar.
 
 ---
 
@@ -134,7 +139,9 @@ Tampilan splash screen dengan animasi typing effect untuk nama aplikasi "DIKΛ",
   <img src="screenshoot/cuaca2.jpg" width="250" alt="Fragment Cuaca 2">
 </p>
 
-Informasi cuaca terkini dengan ikon, suhu, deskripsi kondisi cuaca, humidity, wind speed, dan prakiraan cuaca 7 hari ke depan dengan design gradient yang menarik.
+Fragment Cuaca menampilkan informasi kondisi cuaca terkini secara real-time dengan tampilan visual yang informatif dan modern.
+Pada gambar kiri, ditampilkan kondisi cuaca hari ini yang mencakup ikon cuaca, suhu utama (°C), serta deskripsi singkat seperti “Berawan”. Di bawahnya terdapat bagian Informasi Detail yang menampilkan kelembaban udara (humidity) dan kecepatan angin (wind speed).
+Sedangkan gambar kanan menampilkan tampilan lanjutan dengan tambahan informasi seperti jarak pandang (visibility), tekanan udara (pressure), serta prakiraan cuaca 7 hari ke depan yang disajikan dalam bentuk kartu harian. Desain menggunakan gaya gradient lembut untuk memberikan kesan bersih, dinamis, dan mudah dipahami oleh pengguna.
 
 ---
 
@@ -144,8 +151,9 @@ Informasi cuaca terkini dengan ikon, suhu, deskripsi kondisi cuaca, humidity, wi
   <img src="screenshoot/kalkulatorlandscape.jpg" width="400" alt="Kalkulator Landscape">
 </p>
 
-**Kiri:** Kalkulator dalam mode portrait dengan layout yang intuitif.  
-**Kanan:** Kalkulator dalam mode landscape dengan responsive design.
+Fragment Kalkulator berfungsi sebagai alat hitung multifungsi dengan tampilan yang responsif dan mudah digunakan.
+Pada gambar kiri, ditampilkan kalkulator dalam mode potrait, dengan tata letak tombol yang besar, kontras warna yang jelas, serta susunan operasi dasar seperti penjumlahan, pengurangan, perkalian, dan pembagian sehingga mudah dioperasikan oleh pengguna.
+Sementara pada gambar kanan, ditampilkan mode landscape yang secara otomatis menyesuaikan tampilan menjadi lebih lebar dan menampilkan fitur operasi lanjutan seperti sin, cos, tan, log, dan pangkat, sehingga mendukung kebutuhan perhitungan yang lebih kompleks dengan desain antarmuka yang tetap rapi dan interaktif.
 
 ---
 
@@ -155,8 +163,9 @@ Informasi cuaca terkini dengan ikon, suhu, deskripsi kondisi cuaca, humidity, wi
   <img src="screenshoot/detailkontak.jpg" width="250" alt="Detail Kontak">
 </p>
 
-**Kiri:** List kontak dengan foto profil, nama, nomor telepon, dan status.  
-**Kanan:** Detail kontak dengan informasi lengkap termasuk email, WhatsApp, alamat, dan social media links.
+Fragment Kontak berfungsi sebagai halaman untuk menampilkan dan mengelola daftar kontak pengguna dengan tampilan yang sederhana dan informatif.
+Pada gambar kiri, ditampilkan daftar kontak lengkap dengan foto profil, nama, nomor telepon, email, serta status seperti Teman, Keluarga, atau Kerja. Di bagian atas terdapat kolom pencarian yang memudahkan pengguna menemukan kontak tertentu dengan cepat.
+Sementara pada gambar kanan, ketika salah satu kontak dipilih, muncul tampilan detail kontak yang menampilkan informasi lebih lengkap seperti foto profil, nama, nomor telepon, email, dan kategori/status kontak. Desain antarmuka dibuat responsif dan mudah dipahami, sehingga pengguna dapat mengakses informasi kontak dengan praktis dan efisien.
 
 ---
 
@@ -166,8 +175,9 @@ Informasi cuaca terkini dengan ikon, suhu, deskripsi kondisi cuaca, humidity, wi
   <img src="screenshoot/formeditbiodata.jpg" width="250" alt="Biodata Edit Mode">
 </p>
 
-**Kiri:** Mode View dengan card informasi biodata yang rapi, termasuk foto profil, data pribadi, kontak, akademik, dan skill section.  
-**Kanan:** Mode Edit dengan form input lengkap untuk mengubah data biodata.
+Fragment Biodata berfungsi untuk menampilkan dan mengelola informasi pribadi pengguna secara lengkap dengan tampilan yang rapi dan interaktif.
+Pada gambar kiri, ditampilkan mode view yang memuat card informasi biodata berisi foto profil, nama, program studi, semester, serta data pribadi seperti NIM dan tanggal lahir. Tampilan ini juga dilengkapi dengan tombol Edit Biodata yang memungkinkan pengguna masuk ke mode pengeditan.
+Sementara pada gambar kanan, ditampilkan mode edit dengan form input yang lebih lengkap untuk memperbarui data biodata. Pengguna dapat mengubah informasi seperti nama lengkap, NIM, tanggal lahir, jenis kelamin, golongan darah, nomor telepon, dan email. Desain antarmuka dibuat responsif, memudahkan pengguna dalam melihat maupun memperbarui data pribadi dengan tampilan yang bersih dan terstruktur.
 
 ---
 
@@ -328,20 +338,6 @@ app/src/main/
 
 ---
 
-## 📄 Lisensi
-
-Project ini dibuat untuk keperluan akademik (UTS Pemrograman Mobile) di Institut Teknologi Nasional Bandung.
-
----
-
-## 🙏 Acknowledgments
-
-- Dosen Pengampu: Mata Kuliah Pemrograman Mobile
-- Google Developers untuk dokumentasi Jetpack Compose
-- Material Design team untuk design system
-- Stack Overflow community untuk troubleshooting
-
----
 
 ## 📝 Catatan Pengembangan
 
@@ -364,6 +360,3 @@ Project ini dibuat untuk keperluan akademik (UTS Pemrograman Mobile) di Institut
 - [ ] Localization (multi-bahasa)
 - [ ] Unit testing dan UI testing
 
----
-
-**Dibuat dengan ❤️ menggunakan Kotlin & Jetpack Compose**
